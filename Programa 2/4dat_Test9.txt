@@ -1,0 +1,13 @@
+
+
+//&p-prueba
+//&b=2
+
+linea; //comentario
+
+
+linea;
+
+/* comentario */
+linea; 
+linea;

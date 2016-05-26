@@ -1,0 +1,95 @@
+// Documento de diseño para el Programa1
+// Jose Gonzalez - A01036121
+// 2/2/2016
+
+//-------
+main: 
+
+out -> cuantos archivos?
+in <- N
+
+for i -> N {
+
+	out-> nombre del archivo?
+	in <- nombre
+
+	while(!(found = file.searchFile(nombre))) {
+		// validar que exista
+		out -> no se encontró el archivo, intente de nuevo.
+	}
+	file.analyze();
+	arr[i] = file;
+}
+
+
+//-------
+files:
+
+BufferedReader br;
+
+	bool searchFile(str) {
+
+
+		try {
+			br = new BufferedReader(new FileReader(str));
+
+		} catch() {
+			return false;
+		}
+	}
+
+	
+	void analyze () {
+
+		if(str.trim().isEmpty()) {
+			empty++;
+			totalEmpty++
+		} else {
+			info++;
+			totalInfo++;
+		}
+	}
+
+	int comparteTo() {
+		// comparar los archivos en terminos de la cantidad de lineas con informacion
+	}
+
+
+//-----------
+printer:
+	
+	void print (arrFiles, n) {
+
+		Arrays.sort(arrFiles);	
+	
+		for ;; // imprimir la informacion completa
+	}
+
+//-----------
+PRUEBAS:
+
+*Normales
+- Pruebas del documento de requerimientos
+- Con un solo archivo
+- Con mas de dos archivos
+- 10 archivos
+- Archivos con las mismas características
+
+*Anormales
+- Archivo vacío
+- Introduce string en lugar de int en cantidad
+- El primer archivo no existe
+- El segundo archivo no existe
+
+
+
+
+
+
+
+
+
+
+
+
+

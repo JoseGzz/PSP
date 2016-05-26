@@ -1,0 +1,127 @@
+
+FILES:
+
+if (!sLineaActual.trim().isEmpty()) {
+	
+	 // elimina todos los espacios 
+
+	 // si está la etiqueta &p- en su lugar
+		// extraer el nombre
+		// añadir las propiedades del objeto parte a uno nuevo y resetear todas las variables
+		
+	
+
+
+	// si sé que está /* en la linea
+		// y está primero
+			// pero no tiene cierre
+			// entonces no cuentes sino hasta que encuentres el cierre
+		
+	} // si no es lo primero y lo primero no es abre o cierra entonces
+		// hay que revisar si es una instruccion que se cuenta o una etiqueta
+		// si tampoco tiene cierre 
+			 // entonces no cuentes por ahora	
+		
+	}
+	
+	else  // si encuentro el */
+		cuenta = true;
+		// si */ no es lo ultimo y no es { ni }
+			// hay que revisar si es una instruccion que se cuenta o una etiqueta	
+		}
+	} 
+
+	 else {
+
+	// cuenta lo demas
+
+	// si econtramos // puede ser un comentario, una etiqueta o una instruccion con un comentario
+		
+		 // si no es el primer elemento y no es ni { ni }
+			 // entonces es codigo con comentario o etiqueta
+		
+
+		if (s.contains("&m")) { // si está la etiqueta de modificadas
+			buscar el //
+				// y si luego luego está &m y despues ya no hay nada más entonces es modificada
+			}
+		} else // is hay un &i y el tamaño es de 4 //&i 
+			// entonces es la etiqueta de un item
+			// prendemos la bandera de item para usarlo en la identifiacion de get y set y poder saltarlos
+		} else if  (s.contains(&b)) { // si hay un &b
+			// sacamos el numeros de ahi
+			Matcher m = p.matcher(sLineaActual);
+			int numLen;
+			while (m.find()) {
+				// obtenemos el numero
+				// y sumamos su longitud con 5: //&b=, y si ese es el tamaño total
+  					B += Integer.parseInt(m.group()); // es una etiqueta de base
+				}
+			}
+		
+		} else if (s.contains("&d")) { // igual que el caso anterior
+			Pattern p = Pattern.compile("-?\\d+");
+			Matcher m = p.matcher(sLineaActual);
+			int numLen;
+			while (m.find()) {
+				numLen = m.group();
+				if(s.length() == numLen + 5)
+  				D += Integer.parseInt(m.group());
+			}
+		}  // si está la etiqueta &p- en su lugar
+			 // extraer el nombre
+				
+			// añadir las propiedades del objeto parte a uno nuevo y resetear todas las variables
+			
+		}	
+		
+	} else if // si la linea actual es mayor que uno, o sea no es ni } ni {
+		  // y estamos en un set o get
+ 			 // dejamos de contar
+			// apagamos la bandera
+			 // prendemos bandera por estar dentro
+		} else // inclusive si hay } ó { si puede que haya codigo  
+			T++;
+			lineasMetodo = T;
+		}
+	}
+
+	// si estábamos dentro de un get o set y ya vimos el }
+		 podemos volver a contar
+		// apagamos bandera
+	
+}
+
+Part:
+
+// clase con los atributos que corresponden a cada parte
+
+
+
+*PRUEBAS:
+
+Normales:
+-Los archivos dados como en el ejemplo.
+-Los archivos dados todos juntos.
+-Que el programa no cuenta las líneas fuera de una parte.
+-Que el programa cuente las líneas de código totales.
+-Probar que se ignora lo que está dentro de comentarios de varias líneas.
+-Ignorar comentarios de una sola línea
+-Reconocimiento de &i
+-Reconocimiento de &m
+-Contar líneas normales
+
+Anormales:
+-Que no se sigan los estándares de comentarios (al lado del código)
+-Que no haya errores al momento de identificar una mala contabilización.
+-El archivo no existe
+-Se insertan letras en lugar de números cuando se pregunta por la cantidad de archivos.
+
+
+
+
+
+
+
+
+

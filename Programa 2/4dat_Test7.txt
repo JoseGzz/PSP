@@ -1,0 +1,28 @@
+/*
+//&m
+*/
+
+//&p-prueba
+//&b=11
+//&m comentario
+
+//&m
+
+string s = "//&m";
+
+
+linea; //&m
+linea;
+linea;
+linea;
+linea;
+/* comentario */
+linea; 
+linea;
+linea; //&m
+linea;
+linea;
+linea;
+// comentario &m
+
+/* //&m */

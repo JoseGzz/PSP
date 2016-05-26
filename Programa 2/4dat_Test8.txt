@@ -1,0 +1,19 @@
+
+
+//&p-prueba
+//&b=11
+//&m comentario
+
+//&m
+
+
+if (a && b 
+		&& c
+		&& d)
+		
+linea;
+linea;
+
+/* comentario */
+linea; 
+linea;

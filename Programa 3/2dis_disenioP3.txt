@@ -1,0 +1,111 @@
+DISEÑO PROGRAMA 3
+
+Metricas.java:
+
+// leer archivo 
+boolean searchFile(String sNombre) {
+
+	this.sNombre = sNombre;
+
+	try {
+		brBuffer = new BufferedReader(new FileReader(sNombre));
+	} catch (Exception eE) {
+		return false;
+	}
+
+	return true;
+}
+while ((sLine = brBuffer.readLine()) != null) {
+	// usar un arreglo de strings y pasarlo como argumento a read()
+}
+	
+// recibir de la clase Organizador la XK, la N, el arreglo con las X y el arreglo con las Y
+organizador.getXK();
+organizador.getN();
+organizador.getX();
+organizador.getY();
+// con esa informacion hacer sets de las variables en Calculadora
+calculadora.setN(N);
+calculadora.setXk(Xk);
+calculadora.setR(N, arrX, arrY);
+calculadora.setR^2
+calculadora.setB1(arrX, arrY, n);
+calculadora.setB0();
+// llamar al metodo calcular 
+calculadora.calcular()
+
+// imprimir los resultados 
+
+
+Organizador.java:
+
+// el primer número es igual o mayor a cero
+// Recibe el arreglo de strings , guarda el primer valor en Xk
+// contar la cantidad de parejas y guardar en variable
+// separar X de las Y y gaurdar en arreglos distintos
+
+Calculadora.java:
+
+// usar fórmulas del PSP para determinar métricas 
+
+int getN
+return n;
+
+double getR
+return (n * sumXY() - SumX()*SumY())/(sqrt( (n*SumX2() - Pow(SumX, 2)) * (n*SumY2() - pow(SumY(),2))));
+
+double getR2
+return pow(getR, 2);
+
+double getB1
+return (SumXY() - n*Xavg()*Yavg) / (SumX2() - n*pow(Xav(), 2));
+
+double getB0
+return Yavg() - getB1()*Xavg;
+
+double getYk
+return getB0() + getB1()*Xk;
+
+double Xavg()
+return SumX()/n;
+
+double SumY2()
+for 0 to n-1
+	sum +=pow(y,2)
+return sum;
+
+double SumY()
+for 0 to n-1
+	sum += y
+return sum;
+
+double Yavg()
+return SumY()/n;
+
+double sumX()
+for 0 to n-1
+	sum += x
+
+double sumX2()
+for 0 to n-1
+	sum +=pow(x,2)
+return sum;
+
+
+PRUEBAS
+
+Normales:
+Los primeros tres archivos de prueba.
+
+Anormales:
+Que el archivo no exista.
+Que el primer número sea negativo.
+Que algún número de las parejas sea negativo.
+Que sólo haya un valor en lugar de una pareja.
+
+
+
+
+
+
+

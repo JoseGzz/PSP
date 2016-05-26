@@ -1,0 +1,13 @@
+PARTES BASE: 
+	Calculadora: T=93, I=10, B=65, D=0, M=0, A=28
+	DistribucionT: T=40, I=2, B=70, D=30, M=3, A=0
+	Metricas: T=68, I=2, B=64, D=0, M=7, A=4
+-------------------------------------------------
+PARTES NUEVAS:
+-------------------------------------------------
+PARTES REUSADAS:
+	Gamma: T=16, I=3, B=16
+	Integral: T=37, I=1, B=37
+	Organizador: T=46, I=1, B=46
+-------------------------------------------------
+Total de LDC: 300
